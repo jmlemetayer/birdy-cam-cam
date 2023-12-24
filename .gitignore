@@ -1,0 +1,4 @@
+/.config*
+/build/
+/downloads/
+/sstate-cache/

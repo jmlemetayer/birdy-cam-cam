@@ -1,0 +1,9 @@
+[submodule "platform/openbar"]
+	path = platform/openbar
+	url = https://github.com/openbar/openbar.git
+[submodule "platform/poky"]
+	path = platform/poky
+	url = https://github.com/yoctoproject/poky.git
+[submodule "platform/meta-raspberrypi"]
+	path = platform/meta-raspberrypi
+	url = https://github.com/agherzan/meta-raspberrypi.git
