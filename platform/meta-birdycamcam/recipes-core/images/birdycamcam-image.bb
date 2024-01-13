@@ -3,4 +3,7 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_FEATURES += "ssh-server-openssh"
+IMAGE_FEATURES += " \
+    ssh-server-openssh \
+    stateless-rootfs \
+"

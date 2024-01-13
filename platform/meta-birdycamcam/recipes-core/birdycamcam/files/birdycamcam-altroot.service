@@ -1,0 +1,10 @@
+[Unit]
+Description=Configure alternate root partition for Birdy Cam Cam
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=@LIBEXECDIR@/birdycamcam/configure-altroot-alias.sh
+
+[Install]
+WantedBy=multi-user.target

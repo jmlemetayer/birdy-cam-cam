@@ -1,0 +1,8 @@
+if test ! -n "${rootpart}"; then setenv rootpart 2; setenv altrootpart 3; fi
+echo "Using rootfs located on partition #${rootpart}"
+fdt addr ${fdt_addr} && fdt get value bootargs /chosen bootargs
+ext4load @@BOOT_MEDIA@@ 0:${rootpart} ${kernel_addr_r} boot/@@KERNEL_IMAGETYPE@@
+if test ! -e @@BOOT_MEDIA@@ 0:1 uboot.env; then saveenv; fi;
+setenv bootargs "${bootargs} root=/dev/mmcblk0p${rootpart}"
+setenv bootargs "${bootargs} altroot=/dev/mmcblk0p${altrootpart}"
+@@KERNEL_BOOTCMD@@ ${kernel_addr_r} - ${fdt_addr}

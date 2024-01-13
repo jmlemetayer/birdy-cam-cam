@@ -23,4 +23,5 @@ LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
 
 # Optional build configuration for the meta-raspberrypi layer:
 # https://meta-raspberrypi.readthedocs.io/en/latest/extra-build-config.html
+RPI_USE_U_BOOT = "1"
 ENABLE_UART = "1"

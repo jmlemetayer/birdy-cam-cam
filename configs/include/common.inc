@@ -3,6 +3,8 @@ DISTRO := birdycamcam
 image:
 	bitbake birdycamcam-image
 
+OB_BB_LAYERS += ${OB_ROOT_DIR}/platform/meta-openembedded/meta-oe/
+OB_BB_LAYERS += ${OB_ROOT_DIR}/platform/meta-swupdate/
 OB_BB_LAYERS += ${OB_ROOT_DIR}/platform/meta-birdycamcam
 
 DL_DIR     ?= ${OB_ROOT_DIR}/downloads

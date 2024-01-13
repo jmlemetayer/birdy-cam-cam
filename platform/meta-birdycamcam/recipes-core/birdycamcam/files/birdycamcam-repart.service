@@ -1,0 +1,12 @@
+[Unit]
+Description=Add alternate root partition for Birdy Cam Cam
+ConditionFirstBoot=yes
+Before=birdycamcam-growfs.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=@LIBEXECDIR@/birdycamcam/create-altroot-partition.sh
+
+[Install]
+WantedBy=multi-user.target
