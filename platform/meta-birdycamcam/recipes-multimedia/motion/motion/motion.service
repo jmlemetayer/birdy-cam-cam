@@ -1,0 +1,10 @@
+[Unit]
+Description=Motion detection video capture daemon
+After=network.target
+
+[Service]
+ExecStart=motion
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

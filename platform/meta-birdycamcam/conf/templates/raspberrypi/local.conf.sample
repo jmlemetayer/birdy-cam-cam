@@ -19,7 +19,7 @@ BB_DISKMON_DIRS ??= "\
     HALT,/tmp,10M,1K"
 
 # Accepted licenses
-LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+LICENSE_FLAGS_ACCEPTED = "commercial synaptics-killswitch"
 
 # Optional build configuration for the meta-raspberrypi layer:
 # https://meta-raspberrypi.readthedocs.io/en/latest/extra-build-config.html
