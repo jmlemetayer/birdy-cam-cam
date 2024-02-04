@@ -1,0 +1,3 @@
+include ${OB_DEFCONFIG_DIR}/include/common-rpi.inc
+
+MACHINE := raspberrypi2
