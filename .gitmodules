@@ -7,3 +7,6 @@
 [submodule "platform/meta-raspberrypi"]
 	path = platform/meta-raspberrypi
 	url = https://github.com/agherzan/meta-raspberrypi.git
+[submodule "platform/meta-openembedded"]
+	path = platform/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git
