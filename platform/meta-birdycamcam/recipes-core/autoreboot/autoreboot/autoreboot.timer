@@ -1,0 +1,9 @@
+[Unit]
+Description=Reboot the board every day
+
+[Timer]
+Unit=autoreboot.service
+OnCalendar=*-*-* 00:00:00
+
+[Install]
+WantedBy=timers.target

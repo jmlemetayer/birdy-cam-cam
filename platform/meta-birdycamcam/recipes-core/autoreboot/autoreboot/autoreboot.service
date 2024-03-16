@@ -1,0 +1,6 @@
+[Unit]
+Description=Reboot the board every day
+
+[Service]
+Type=oneshot
+ExecStart=reboot
